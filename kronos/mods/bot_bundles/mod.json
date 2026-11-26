@@ -1,0 +1,7 @@
+{
+    "name": "Bot Skins, Loadouts & Ranks",
+    "author": "Maverick",
+    "version": "1.0.0",
+    "type": "mode",
+    "description": "MP bots get BO7 operator skins (their own side's), blueprint weapons and attachments, and varied levels and prestiges, shown on the scoreboard. Settings: the SETTINGS block at the top of scripts\\mp_bot_bundles.gsc. Log: kronos\\botbundles\\log.json."
+}

@@ -1,0 +1,785 @@
+BO7 operator skins for level.botbb_cfg_bot_skins in mp_bot_bundles.gsc
+
+Use an operator name for that operator in a random one of its skins, or a skin name for exactly that skin.
+These are the game's internal names. [bundle: x] = a store-bundle skin; with a blueprint rolled, the bot may use
+that bundle's blueprint (bundle_chance in the settings).
+Every operator belongs to one side. Random skins always come from the bot's own side; a skin named in the settings
+is worn as given, even an operator of the other side.
+
+[plain] = a default or ranked-play skin; random picks skip these with skin_pool 1 or more (CDL team jerseys with 2
+or more, everything but bundle skins with 3).
+
+==== JSOC operators (game faction code SPECGRU) ====
+
+sat_usa_pl_jack_base   (operator, 4 skins)
+    sat_usa_pl_jack_base_skin   [plain]
+    sat_usa_pl_jack_base_specialforces_skin
+    sat_usa_pl_jack_base_infected_skin   [bundle: infected]
+    sat_usa_pl_jack_base_infected_gardenia_skin   [bundle: infected]
+
+sat_usa_pl_black   (operator, 8 skins)
+    sat_usa_pl_black_proto_skin   [bundle: proto]
+    sat_usa_pl_black_sp_skin
+    sat_usa_pl_black_subject_bp_skin   [bundle: subject]
+    sat_usa_pl_black_bot_skin
+    sat_usa_pl_black_virus_skin
+    sat_usa_pl_black_seal_skin
+    sat_usa_pl_black_dad_skin
+    sat_usa_pl_black_support_skin
+
+sat_zaf_pl_peach   (operator, 22 skins)
+    sat_zaf_pl_peach_proto_skin   [bundle: proto]
+    sat_zaf_pl_peach_mud_skin
+    sat_zaf_pl_peach_eagle_skin
+    sat_zaf_pl_peach_polar_skin
+    sat_zaf_pl_peach_stealth_skin   [bundle: stealth]
+    sat_zaf_pl_peach_wc_skin
+    sat_zaf_pl_peach_stargazer_skin
+    sat_zaf_pl_peach_xo_skin
+    sat_zaf_pl_peach_xo_bc_skin
+    sat_zaf_pl_peach_nm_skin
+    sat_zaf_pl_peach_hitman_skin   [bundle: hitman]
+    sat_zaf_pl_peach_roman_skin
+    sat_zaf_pl_peach_cryo_skin   [bundle: cryo]
+    sat_zaf_pl_peach_recon_skin   [bundle: recon]
+    sat_zaf_pl_peach_nm_glitch_skin
+    sat_zaf_pl_peach_gamble_skin   [bundle: gamble]
+    sat_zaf_pl_peach_shattered_skin   [bundle: shattered]
+    sat_zaf_pl_peach_crush_skin
+    sat_zaf_pl_peach_wild_skin
+    sat_zaf_pl_peach_shattered_helmet_skin   [bundle: shattered]
+    sat_zaf_pl_peach_shattered_no_helmet_skin   [bundle: shattered]
+    sat_zaf_pl_peach_zm_skin
+
+sat_ind_pl_azure   (operator, 26 skins)
+    sat_ind_pl_azure_proto_skin   [bundle: proto]
+    sat_ind_pl_azure_killer_skin
+    sat_ind_pl_azure_fantasy_skin
+    sat_ind_pl_azure_cradle_skin   [bundle: cradle]
+    sat_ind_pl_azure_biohazard_skin
+    sat_ind_pl_azure_wc_skin
+    sat_ind_pl_azure_rhino_skin
+    sat_ind_pl_azure_sneak_skin
+    sat_ind_pl_azure_surgeon_bp_skin
+    sat_ind_pl_azure_surgeon_bc_skin
+    sat_ind_pl_azure_merc_skin   [bundle: merc]
+    sat_ind_pl_azure_mono_skin
+    sat_ind_pl_azure_shieldsoldier_skin
+    sat_ind_pl_azure_jsoc_skin
+    sat_ind_pl_azure_tattoo_skin
+    sat_ind_pl_azure_brass_skin
+    sat_ind_pl_azure_sand_skin
+    sat_ind_pl_azure_thug_skin
+    sat_ind_pl_azure_tattoo_bc_skin
+    sat_ind_pl_azure_grenadier_skin
+    sat_ind_pl_azure_marrow_skin
+    sat_ind_pl_azure_nm_glitch_skin
+    sat_ind_pl_azure_mind_skin   [bundle: mind]
+    sat_ind_pl_azure_secure_skin
+    sat_ind_pl_azure_doctor_skin
+    sat_ind_pl_azure_peanut_skin   [bundle: peanut]
+
+sat_ger_pl_purple   (operator, 15 skins)
+    sat_ger_pl_purple_proto_skin   [bundle: proto]
+    sat_ger_pl_purple_laboratory_skin
+    sat_ger_pl_purple_drained_skin
+    sat_ger_pl_purple_chemicals_skin
+    sat_ger_pl_purple_chemicals_bc_skin
+    sat_ger_pl_purple_fancy_skin
+    sat_ger_pl_purple_teleport_skin   [bundle: teleport]
+    sat_ger_pl_purple_cryo_skin   [bundle: cryo]
+    sat_ger_pl_purple_hundred_skin
+    sat_ger_pl_purple_cryo_bc_skin   [bundle: cryo]
+    sat_ger_pl_purple_panzer_skin   [bundle: panzer]
+    sat_ger_pl_purple_fused_skin
+    sat_ger_pl_purple_fused_bc_skin
+    sat_ger_pl_purple_barber_skin
+    sat_ger_pl_purple_super_skin
+
+sat_rus_pl_magenta   (operator, 20 skins)
+    sat_rus_pl_magenta_proto_skin   [bundle: proto]
+    sat_rus_pl_magenta_snow_skin
+    sat_rus_pl_magenta_space_skin
+    sat_rus_pl_magenta_drained_skin
+    sat_rus_pl_magenta_handler_skin
+    sat_rus_pl_magenta_knight_skin
+    sat_rus_pl_magenta_handler_bc_skin
+    sat_rus_pl_magenta_evil_skin
+    sat_rus_pl_magenta_wasteland_skin   [bundle: wasteland]
+    sat_rus_pl_magenta_henchman_skin
+    sat_rus_pl_magenta_faberge_skin   [bundle: faberge]
+    sat_rus_pl_magenta_raider_skin
+    sat_rus_pl_magenta_circus_skin   [bundle: circus]
+    sat_rus_pl_magenta_organ_skin   [bundle: organ]
+    sat_rus_pl_magenta_henchman_bc_skin
+    sat_rus_pl_magenta_soda_skin
+    sat_rus_pl_magenta_wolf_skin
+    sat_rus_pl_magenta_super_skin
+    sat_rus_pl_magenta_splice_bc_skin   [bundle: splice]
+    sat_rus_pl_magenta_splice_skin   [bundle: splice]
+
+sat_usa_pl_amber   (operator, 23 skins)
+    sat_usa_pl_amber_proto_skin   [bundle: proto]
+    sat_usa_pl_amber_chickenlover_skin   [bundle: chickenlover]
+    sat_usa_pl_amber_drained_skin
+    sat_usa_pl_amber_turned_skin
+    sat_usa_pl_amber_quad_skin   [bundle: quad]
+    sat_usa_pl_amber_cook_skin
+    sat_usa_pl_amber_quad_bc_skin   [bundle: quad]
+    sat_usa_pl_amber_celtic_skin
+    sat_usa_pl_amber_magic_skin
+    sat_usa_pl_amber_challenge_skin
+    sat_usa_pl_amber_monkeybomb_skin
+    sat_usa_pl_amber_bio_skin
+    sat_usa_pl_amber_ultimis_skin
+    sat_usa_pl_amber_alpine_bc_skin   [bundle: alpine]
+    sat_usa_pl_amber_slacker_skin
+    sat_usa_pl_amber_alpine_bp_skin   [bundle: alpine]
+    sat_usa_pl_amber_washington_skin
+    sat_usa_pl_amber_tropical_skin
+    sat_usa_pl_amber_metal_skin
+    sat_usa_pl_amber_metal_bc_skin
+    sat_usa_pl_amber_king_skin
+    sat_usa_pl_amber_jester_skin
+    sat_usa_pl_amber_super_skin
+
+sat_jpn_pl_scarlet   (operator, 21 skins)
+    sat_jpn_pl_scarlet_proto_skin   [bundle: proto]
+    sat_jpn_pl_scarlet_samurai_skin
+    sat_jpn_pl_scarlet_samurai_red_skin
+    sat_jpn_pl_scarlet_drained_skin
+    sat_jpn_pl_scarlet_road_skin
+    sat_jpn_pl_scarlet_fold_skin
+    sat_jpn_pl_scarlet_breacher_skin
+    sat_jpn_pl_scarlet_battle_skin
+    sat_jpn_pl_scarlet_shepard_skin
+    sat_jpn_pl_scarlet_sight_skin
+    sat_jpn_pl_scarlet_sight_bc_skin
+    sat_jpn_pl_scarlet_spirit_skin   [bundle: spirit]
+    sat_jpn_pl_scarlet_street_skin
+    sat_jpn_pl_scarlet_spirit_skin_human_mask   [bundle: spirit]
+    sat_jpn_pl_scarlet_spirit_skin_demon_mask   [bundle: spirit]
+    sat_jpn_pl_scarlet_horror_skin
+    sat_jpn_pl_scarlet_disciple_skin
+    sat_jpn_pl_scarlet_war_skin
+    sat_jpn_pl_scarlet_butcher_bc_skin
+    sat_jpn_pl_scarlet_butcher_skin
+    sat_jpn_pl_scarlet_super_skin
+
+sat_usa_pl_maroon   (operator, 20 skins)
+    sat_usa_pl_maroon_proto_skin   [bundle: proto]
+    sat_usa_pl_maroon_uchi_skin
+    sat_usa_pl_maroon_shadow_skin   [bundle: shadow]
+    sat_usa_pl_maroon_wc_skin
+    sat_usa_pl_maroon_abstract_skin
+    sat_usa_pl_maroon_shadow_bc_skin   [bundle: shadow]
+    sat_usa_pl_maroon_redacted_skin
+    sat_usa_pl_maroon_fbi_skin   [bundle: fbi]
+    sat_usa_pl_maroon_medic_bp_skin   [bundle: medic]
+    sat_usa_pl_maroon_army_skin
+    sat_usa_pl_maroon_sea_skin
+    sat_usa_pl_maroon_bruiser_skin
+    sat_usa_pl_maroon_igl_skin
+    sat_usa_pl_maroon_tagger_skin   [bundle: tagger]
+    sat_usa_pl_maroon_mask_skin
+    sat_usa_pl_maroon_wrath_skin
+    sat_usa_pl_maroon_nm_glitch_skin
+    sat_usa_pl_maroon_rage_skin
+    sat_usa_pl_maroon_welded_skin
+    sat_usa_pl_maroon_chestnut_skin   [bundle: chestnut]
+
+sat_usa_pl_red   (operator, 24 skins)
+    sat_usa_pl_red_proto_skin   [bundle: proto]
+    sat_usa_pl_red_safety_skin   [bundle: safety]
+    sat_usa_pl_red_sweater_skin
+    sat_usa_pl_red_beta_skin   [bundle: beta]   [plain]
+    sat_usa_pl_red_psyop_skin   [bundle: psyop]
+    sat_usa_pl_red_halo_skin
+    sat_usa_pl_red_collide_skin
+    sat_usa_pl_red_wc_skin
+    sat_usa_pl_red_tv_skin
+    sat_usa_pl_red_damage_skin
+    sat_usa_pl_red_urban_skin
+    sat_usa_pl_red_bloom_skin
+    sat_usa_pl_red_urban_bc_skin
+    sat_usa_pl_red_blackout_skin
+    sat_usa_pl_red_avalon_skin   [bundle: avalon]
+    sat_usa_pl_red_guild_skin   [bundle: guild]
+    sat_usa_pl_red_mam_alt_skin
+    sat_usa_pl_red_mam_skin
+    sat_usa_pl_red_nm_glitch_skin
+    sat_usa_pl_red_sixpack_skin
+    sat_usa_pl_red_fbi_skin   [bundle: fbi]
+    sat_usa_pl_red_modern_skin
+    sat_usa_pl_red_scare_skin   [bundle: scare]
+    sat_usa_pl_red_glitch_skin
+
+sat_nzl_pl_rose   (operator, 13 skins)
+    sat_nzl_pl_rose_proto_skin   [bundle: rose]
+    sat_nzl_pl_rose_hive_skin   [bundle: rose]
+    sat_nzl_pl_rose_code_skin   [bundle: rose]
+    sat_nzl_pl_rose_covert_skin   [bundle: rose]
+    sat_nzl_pl_rose_gym_skin   [bundle: rose]
+    sat_nzl_pl_rose_arctic_skin   [bundle: rose]
+    sat_nzl_pl_rose_wc_skin   [bundle: rose]
+    sat_nzl_pl_rose_toa_skin   [bundle: rose]
+    sat_nzl_pl_rose_mono_skin   [bundle: rose]
+    sat_nzl_pl_rose_guild_skin   [bundle: rose]
+    sat_nzl_pl_rose_nycto_skin   [bundle: rose]
+    sat_nzl_pl_rose_nm_glitch_skin   [bundle: rose]
+    sat_nzl_pl_rose_ground_skin   [bundle: rose]
+
+sat_usa_pl_gray   (operator, 11 skins)
+    sat_usa_pl_gray_proto_skin   [bundle: proto]
+    sat_usa_pl_gray_slugger_skin   [bundle: slugger]
+    sat_usa_pl_gray_robot_bc_skin   [bundle: robot]
+    sat_usa_pl_gray_robot_bp_skin   [bundle: robot]
+    sat_usa_pl_gray_rgb_skin
+    sat_usa_pl_gray_liquid_skin   [bundle: liquid]
+    sat_usa_pl_gray_tank_skin
+    sat_usa_pl_gray_arcade_skin
+    sat_usa_pl_gray_tank_bc_skin
+    sat_usa_pl_gray_pepper_skin
+    sat_usa_pl_gray_skin_skin   [plain]
+
+sat_usa_pl_silver   (operator, 14 skins)
+    sat_usa_pl_silver_proto_skin   [bundle: proto]
+    sat_usa_pl_silver_proto_neo_skin   [bundle: proto]
+    sat_usa_pl_silver_acid_skin   [bundle: acid]
+    sat_usa_pl_silver_factory_skin
+    sat_usa_pl_silver_protect_skin
+    sat_usa_pl_silver_harsh_bc_skin
+    sat_usa_pl_silver_harsh_skin
+    sat_usa_pl_silver_protect_clean_skin   [bundle: clean]
+    sat_usa_pl_silver_protect_brown_clean_skin   [bundle: clean]
+    sat_usa_pl_silver_glitch_skin
+    sat_usa_pl_silver_upgrade_skin
+    sat_usa_pl_silver_machine_skin
+    sat_usa_pl_silver_machine_bc_skin
+    sat_usa_pl_silver_pumpkin_skin
+
+sat_usa_pl_cyan   (operator, 17 skins)
+    sat_usa_pl_cyan_proto_skin   [bundle: proto]
+    sat_usa_pl_cyan_combat_skin
+    sat_usa_pl_cyan_trained_skin
+    sat_usa_pl_cyan_augment_skin   [bundle: augment]
+    sat_usa_pl_cyan_wc_skin
+    sat_usa_pl_cyan_deadeye_skin
+    sat_usa_pl_cyan_villain_skin   [bundle: villain]
+    sat_usa_pl_cyan_flank_skin
+    sat_usa_pl_cyan_poseidon_skin
+    sat_usa_pl_cyan_slash_skin
+    sat_usa_pl_cyan_color_skin
+    sat_usa_pl_cyan_slash_bc_skin
+    sat_usa_pl_cyan_lmao_skin
+    sat_usa_pl_cyan_nm_glitch_skin
+    sat_usa_pl_cyan_island_skin
+    sat_usa_pl_cyan_puppet_skin   [bundle: puppet]
+    sat_usa_pl_cyan_puppet_bc_skin   [bundle: puppet]
+
+sat_mex_pl_indigo   (operator, 21 skins)
+    sat_mex_pl_indigo_proto_skin   [bundle: proto]
+    sat_mex_pl_indigo_luxury_skin   [bundle: luxury]
+    sat_mex_pl_indigo_monster_skin
+    sat_mex_pl_indigo_monster_alt_skin
+    sat_mex_pl_indigo_digital_skin
+    sat_mex_pl_indigo_wc_skin
+    sat_mex_pl_indigo_demon_lava_skin   [bundle: demon]
+    sat_mex_pl_indigo_swamp_skin   [bundle: swamp]
+    sat_mex_pl_indigo_slate_skin
+    sat_mex_pl_indigo_heist_skin
+    sat_mex_pl_indigo_pirate_skin   [bundle: pirate]
+    sat_mex_pl_indigo_moss_skin
+    sat_mex_pl_indigo_tundranaut_skin
+    sat_mex_pl_indigo_ninja_skin
+    sat_mex_pl_indigo_grunt_skin
+    sat_mex_pl_indigo_pyro_skin
+    sat_mex_pl_indigo_jersey_skin
+    sat_mex_pl_indigo_nm_glitch_skin
+    sat_mex_pl_indigo_patrol_skin
+    sat_mex_pl_indigo_jersey_alt_skin
+    sat_mex_pl_indigo_chestnut_skin   [bundle: chestnut]
+
+sat_usa_pl_voss   (operator, 6 skins)
+    sat_usa_pl_voss_base_skin   [plain]
+    sat_usa_pl_voss_cape_skin
+    sat_usa_pl_voss_cape_bc_skin
+    sat_usa_pl_voss_base_bc_skin
+    sat_usa_pl_voss_secret_skin
+    sat_usa_pl_voss_bankrobber_skin
+
+sat_usa_pl_cdl_male_away   (operator, 21 skins)
+    sat_usa_pl_cdl_male_away_base_skin   [plain]
+    sat_usa_pl_cdl_male_away_surge_skin
+    sat_usa_pl_cdl_male_away_ravens_skin
+    sat_usa_pl_cdl_male_away_m8s_skin
+    sat_usa_pl_cdl_male_away_breach_skin   [bundle: breach]
+    sat_usa_pl_cdl_male_away_optic_skin
+    sat_usa_pl_cdl_male_away_falcons_skin
+    sat_usa_pl_cdl_male_away_cloud9_skin
+    sat_usa_pl_cdl_male_away_rokkr_skin
+    sat_usa_pl_cdl_male_away_koi_skin
+    sat_usa_pl_cdl_male_away_heretics_skin
+    sat_usa_pl_cdl_male_away_faze_skin
+    sat_usa_pl_cdl_male_away_thieves_skin
+    sat_usa_pl_cdl_male_away_mp_ranked_base_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_crimson_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_platinum_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_1_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_gold_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_iridescent_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_diamond_skin   [plain]
+    sat_usa_pl_cdl_male_away_mp_ranked_250_skin   [plain]
+
+sat_usa_pl_cdl_male_home   (operator, 29 skins)
+    sat_usa_pl_cdl_male_home_base_skin   [plain]
+    sat_usa_pl_cdl_male_home_koi_skin
+    sat_usa_pl_cdl_male_home_falcons_skin
+    sat_usa_pl_cdl_male_home_faze_skin
+    sat_usa_pl_cdl_male_home_ravens_skin
+    sat_usa_pl_cdl_male_home_m8s_skin
+    sat_usa_pl_cdl_male_home_heretics_skin
+    sat_usa_pl_cdl_male_home_breach_skin   [bundle: breach]
+    sat_usa_pl_cdl_male_home_thieves_skin
+    sat_usa_pl_cdl_male_home_surge_skin
+    sat_usa_pl_cdl_male_home_rokkr_skin
+    sat_usa_pl_cdl_male_home_cloud9_skin
+    sat_usa_pl_cdl_male_home_optic_skin
+    sat_usa_pl_cdl_male_home_wz_ranked_base_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_base_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_1_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_1_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_crimson_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_platinum_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_diamond_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_250_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_crimson_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_iridescent_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_gold_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_platinum_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_gold_skin   [plain]
+    sat_usa_pl_cdl_male_home_wz_ranked_diamond_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_iridescent_skin   [plain]
+    sat_usa_pl_cdl_male_home_mp_ranked_250_skin   [plain]
+
+sat_rus_pl_weaver   (operator, 5 skins)
+    sat_rus_pl_weaver_drained_skin
+    sat_rus_pl_weaver_rogue_skin
+    sat_rus_pl_weaver_bloodstone_skin
+    sat_rus_pl_weaver_quest_skin
+    sat_rus_pl_weaver_super_skin
+
+sat_usa_pl_tulip   (operator, 1 skin)
+    sat_usa_pl_tulip_base_skin   [bundle: tulip]   [plain]
+
+sat_usa_pl_peony   (operator, 2 skins)
+    sat_usa_pl_peony_base_skin   [plain]
+    sat_usa_pl_peony_variant_skin
+
+sat_usa_pl_breaker   (operator, 1 skin)
+    sat_usa_pl_breaker_base_skin   [plain]
+
+sat_usa_pl_overlord   (operator, 2 skins)
+    sat_usa_pl_overlord_base_skin   [plain]
+    sat_usa_pl_overlord_base_alt_skin
+
+sat_usa_pl_freelance   (operator, 1 skin)
+    sat_usa_pl_freelance_tie_skin
+
+sat_usa_pl_raven   (operator, 5 skins)
+    sat_usa_pl_raven_base_skin   [bundle: raven]   [plain]
+    sat_usa_pl_raven_base_bc_skin   [bundle: raven]
+    sat_usa_pl_raven_altitude_bc_skin   [bundle: raven]
+    sat_usa_pl_raven_altitude_skin   [bundle: raven]
+    sat_usa_pl_raven_action_skin   [bundle: raven]
+
+sat_usa_pl_mozzarella   (operator, 2 skins)
+    sat_usa_pl_mozzarella_base_skin   [plain]
+    sat_usa_pl_mozzarella_burrata_skin
+
+sat_usa_pl_swiss   (operator, 3 skins)
+    sat_usa_pl_swiss_base_skin   [bundle: swiss]   [plain]
+    sat_usa_pl_swiss_damaged_skin   [bundle: swiss]
+    sat_usa_pl_swiss_iri_skin   [bundle: swiss]
+
+sat_usa_pl_anvil   (operator, 5 skins)
+    sat_usa_pl_anvil_base_skin   [bundle: anvil]   [plain]
+    sat_usa_pl_anvil_hammer_bc_skin   [bundle: anvil]
+    sat_usa_pl_anvil_hammer_skin   [bundle: anvil]
+    sat_usa_pl_anvil_base_bc_skin   [bundle: anvil]
+    sat_usa_pl_anvil_horseman_skin   [bundle: anvil]
+
+sat_kor_pl_hunterkiller   (operator, 1 skin)
+    sat_kor_pl_hunterkiller_base_skin   [plain]
+
+sat_usa_pl_vector   (operator, 4 skins)
+    sat_usa_pl_vector_base_skin   [plain]
+    sat_usa_pl_vector_alpha_skin   [plain]
+    sat_usa_pl_vector_redacted_skin
+    sat_usa_pl_vector_omega_skin
+
+sat_usa_pl_sourdough   (operator, 2 skins)
+    sat_usa_pl_sourdough_base_skin   [bundle: sourdough]   [plain]
+    sat_usa_pl_sourdough_hero_skin   [bundle: sourdough]
+
+sat_usa_pl_spectre   (operator, 4 skins)
+    sat_usa_pl_spectre_base_skin   [bundle: spectre]   [plain]
+    sat_usa_pl_spectre_base_bc_skin   [bundle: spectre]
+    sat_usa_pl_spectre_elite_skin   [bundle: spectre]
+    sat_usa_pl_spectre_elite_bc_skin   [bundle: spectre]
+
+sat_usa_pl_cipher   (operator, 4 skins)
+    sat_usa_pl_cipher_gamma_skin
+    sat_usa_pl_cipher_beta_skin   [bundle: beta]   [plain]
+    sat_usa_pl_cipher_alpha_skin   [plain]
+    sat_usa_pl_cipher_base_skin   [plain]
+
+sat_usa_pl_peanut   (operator, 2 skins)
+    sat_usa_pl_peanut_base_skin   [bundle: peanut]   [plain]
+    sat_usa_pl_peanut_shell_skin   [bundle: peanut]
+
+sat_usa_pl_prism   (operator, 3 skins)
+    sat_usa_pl_prism_alpha_skin   [plain]
+    sat_usa_pl_prism_gamma_skin
+    sat_usa_pl_prism_base_skin   [plain]
+
+sat_sgp_pl_blackjack   (operator, 4 skins)
+    sat_sgp_pl_blackjack_base_skin   [plain]
+    sat_sgp_pl_blackjack_base_bc_skin
+    sat_sgp_pl_blackjack_ultra_bc_skin
+    sat_sgp_pl_blackjack_ultra_skin
+
+sat_usa_pl_warden   (operator, 2 skins)
+    sat_usa_pl_warden_base_skin   [bundle: warden]   [plain]
+    sat_usa_pl_warden_western_skin   [bundle: warden]
+
+ghost_western   (operator, 1 skin)
+    ghost_western_a   [operators mod: Ghost (MWII): Ghost; settings only, never random]
+
+jup_mp_beta   (operator, 2 skins)
+    jup_mp_beta_skin   [operators mod: Paul Atreides (MWIII): Paul Atreides; settings only, never random]
+    jup_mp_beta_10_skin   [operators mod: Paul Atreides (MWIII): Paul Atreides (alt); settings only, never random]
+
+snoop_western   (operator, 2 skins)
+    snoop_western_a   [operators mod: Snoop Dogg (MWII): Snoop Dogg; settings only, never random]
+    snoop_western_alt   [operators mod: Snoop Dogg (MWII): Snoop Dogg (alt); settings only, never random]
+
+jup_mp_summer   (operator, 1 skin)
+    jup_mp_summer_skin   [operators mod: Chong (MWIII): Chong; settings only, never random]
+
+gus_western   (operator, 2 skins)
+    gus_kitty_western   [operators mod: Gus kitty (MWII): Kitty; settings only, never random]
+    gus_kitty_western_alt   [operators mod: Gus kitty (MWII): Kitty (alt); settings only, never random]
+
+jup_mp_hotel   (operator, 16 skins)
+    jup_mp_hotel_skin   [operators mod: Scorch (MWIII): Scorch; settings only, never random]
+    jup_mp_hotel_10_skin   [operators mod: Scorch (MWIII): Scorch (skin 10); settings only, never random]
+    jup_mp_hotel_11_skin   [operators mod: Scorch (MWIII): Scorch (skin 11); settings only, never random]
+    jup_mp_hotel_12_skin   [operators mod: Scorch (MWIII): Scorch (skin 12); settings only, never random]
+    jup_mp_hotel_13_skin   [operators mod: Scorch (MWIII): Scorch (skin 13); settings only, never random]
+    jup_mp_hotel_14_skin   [operators mod: Scorch (MWIII): Scorch (skin 14); settings only, never random]
+    jup_mp_hotel_15a_skin   [operators mod: Scorch (MWIII): Scorch (skin 15a); settings only, never random]
+    jup_mp_hotel_15b_skin   [operators mod: Scorch (MWIII): Scorch (skin 15b); settings only, never random]
+    jup_mp_hotel_17_skin   [operators mod: Scorch (MWIII): Scorch (skin 17); settings only, never random]
+    jup_mp_hotel_18_skin   [operators mod: Scorch (MWIII): Scorch (skin 18); settings only, never random]
+    jup_mp_hotel_19_skin   [operators mod: Scorch (MWIII): Scorch (skin 19); settings only, never random]
+    jup_mp_hotel_20_skin   [operators mod: Scorch (MWIII): Scorch (skin 20); settings only, never random]
+    jup_mp_hotel_21_skin   [operators mod: Scorch (MWIII): Scorch (skin 21); settings only, never random]
+    jup_mp_hotel_22_skin   [operators mod: Scorch (MWIII): Scorch (skin 22); settings only, never random]
+    jup_mp_hotel_23_skin   [operators mod: Scorch (MWIII): Scorch (skin 23); settings only, never random]
+    jup_mp_hotel_26_skin   [operators mod: Scorch (MWIII): Scorch (skin 26); settings only, never random]
+
+==== Guild operators (game faction code USA) ====
+
+sat_usa_pl_jill_base   (operator, 3 skins)
+    sat_usa_pl_jill_base_skin   [plain]
+    sat_usa_pl_jill_base_infected_skin   [bundle: infected]
+    sat_usa_pl_jill_base_infected_gardenia_skin   [bundle: infected]
+
+sat_usa_pl_orange   (operator, 16 skins)
+    sat_usa_pl_orange_proto_skin   [bundle: proto]
+    sat_usa_pl_orange_dronecharmer_skin
+    sat_usa_pl_orange_air_skin
+    sat_usa_pl_orange_countermeasure_skin
+    sat_usa_pl_orange_emea_skin
+    sat_usa_pl_orange_wc_skin
+    sat_usa_pl_orange_countermeasure_bc_skin
+    sat_usa_pl_orange_nm_skin
+    sat_usa_pl_orange_paint_skin
+    sat_usa_pl_orange_stealth_skin   [bundle: stealth]
+    sat_usa_pl_orange_sub_skin
+    sat_usa_pl_orange_nm_glitch_skin
+    sat_usa_pl_orange_outlaw_skin   [bundle: outlaw]
+    sat_usa_pl_orange_bubblegum_skin
+    sat_usa_pl_orange_bubblegum_bc_skin
+    sat_usa_pl_orange_break_skin
+
+sat_mex_pl_green   (operator, 21 skins)
+    sat_mex_pl_green_proto_skin   [bundle: proto]
+    sat_mex_pl_green_trap_skin
+    sat_mex_pl_green_sweater_skin
+    sat_mex_pl_green_beta_skin   [bundle: beta]   [plain]
+    sat_mex_pl_green_escape_skin   [bundle: escape]
+    sat_mex_pl_green_wc_skin
+    sat_mex_pl_green_corrupted_skin
+    sat_mex_pl_green_phase_skin   [bundle: phase]
+    sat_mex_pl_green_lofi_skin
+    sat_mex_pl_green_club_skin
+    sat_mex_pl_green_cold_skin
+    sat_mex_pl_green_blackout_skin
+    sat_mex_pl_green_spy_skin
+    sat_mex_pl_green_jsoc_skin
+    sat_mex_pl_green_captain_skin
+    sat_mex_pl_green_tarot_skin   [bundle: tarot]
+    sat_mex_pl_green_sandy_skin   [bundle: sandy]
+    sat_mex_pl_green_nm_glitch_skin
+    sat_mex_pl_green_range_skin   [bundle: range]
+    sat_mex_pl_green_smirk_skin
+    sat_mex_pl_green_smirk_bc_skin
+
+sat_usa_pl_white   (operator, 13 skins)
+    sat_usa_pl_white_proto_skin   [bundle: proto]
+    sat_usa_pl_white_space_skin
+    sat_usa_pl_white_cupid_skin   [bundle: cupid]
+    sat_usa_pl_white_nm_skin
+    sat_usa_pl_white_chrome_skin   [bundle: chrome]
+    sat_usa_pl_white_karma_skin   [bundle: karma]
+    sat_usa_pl_white_legacy_bc_skin
+    sat_usa_pl_white_thug_skin
+    sat_usa_pl_white_chaos_skin
+    sat_usa_pl_white_clean_skin   [bundle: clean]
+    sat_usa_pl_white_death_skin   [bundle: death]
+    sat_usa_pl_white_arachnid_bc_skin
+    sat_usa_pl_white_arachnid_skin
+
+sat_chn_pl_gold   (operator, 25 skins)
+    sat_chn_pl_gold_proto_skin   [bundle: proto]
+    sat_chn_pl_gold_milsim_skin
+    sat_chn_pl_gold_tactical_skin
+    sat_chn_pl_gold_luxury_skin   [bundle: luxury]
+    sat_chn_pl_gold_agile_skin
+    sat_chn_pl_gold_blood_skin   [bundle: blood]
+    sat_chn_pl_gold_hooded_skin
+    sat_chn_pl_gold_wc_skin
+    sat_chn_pl_gold_force_skin
+    sat_chn_pl_gold_equus_skin   [bundle: equus]
+    sat_chn_pl_gold_hunt_skin
+    sat_chn_pl_gold_nm_skin
+    sat_chn_pl_gold_droid_skin
+    sat_chn_pl_gold_jungle_skin   [bundle: jungle]
+    sat_chn_pl_gold_jungle_bc_skin   [bundle: jungle]
+    sat_chn_pl_gold_redline_skin
+    sat_chn_pl_gold_cute_skin
+    sat_chn_pl_gold_west_skin
+    sat_chn_pl_gold_west_beta_skin   [bundle: beta]   [plain]
+    sat_chn_pl_gold_west_alpha_skin   [plain]
+    sat_chn_pl_gold_wall_skin
+    sat_chn_pl_gold_nm_glitch_skin
+    sat_chn_pl_gold_mechanic_skin
+    sat_chn_pl_gold_peanut_skin   [bundle: peanut]
+    sat_chn_pl_gold_halloween_skin
+
+sat_ger_pl_blue   (operator, 21 skins)
+    sat_ger_pl_blue_proto_skin   [bundle: proto]
+    sat_ger_pl_blue_invent_skin
+    sat_ger_pl_blue_obsidian_skin
+    sat_ger_pl_blue_caesars_skin
+    sat_ger_pl_blue_active_skin   [bundle: active]
+    sat_ger_pl_blue_wc_skin
+    sat_ger_pl_blue_carbon_skin   [bundle: carbon]
+    sat_ger_pl_blue_fire_skin   [bundle: fire]
+    sat_ger_pl_blue_vein_skin
+    sat_ger_pl_blue_flame_skin
+    sat_ger_pl_blue_techcamo_skin
+    sat_ger_pl_blue_nm_glitch_skin
+    sat_ger_pl_blue_neon_skin
+    sat_ger_pl_blue_tread_skin
+    sat_ger_pl_blue_tread_bc_skin
+    sat_ger_pl_blue_bankrobber_skin
+    sat_ger_pl_blue_kaiju_skin
+    sat_ger_pl_blue_cq_skin
+    sat_ger_pl_blue_ruin_skin
+    sat_ger_pl_blue_advanced_skin
+    sat_ger_pl_blue_widow_skin   [bundle: widow]
+
+sat_ind_pl_violet   (operator, 17 skins)
+    sat_ind_pl_violet_proto_skin   [bundle: proto]
+    sat_ind_pl_violet_ski_skin
+    sat_ind_pl_violet_web_skin
+    sat_ind_pl_violet_techcult_skin
+    sat_ind_pl_violet_wc_skin
+    sat_ind_pl_violet_techcult_bc_skin
+    sat_ind_pl_violet_puzzle_skin
+    sat_ind_pl_violet_bloom_skin
+    sat_ind_pl_violet_assassin_skin
+    sat_ind_pl_violet_soldier_skin
+    sat_ind_pl_violet_engage_skin
+    sat_ind_pl_violet_raptor_skin
+    sat_ind_pl_violet_nm_glitch_skin
+    sat_ind_pl_violet_breach_skin   [bundle: breach]
+    sat_ind_pl_violet_ambush_skin
+    sat_ind_pl_violet_zm_skin
+    sat_ind_pl_violet_plague_skin   [bundle: plague]
+
+sat_usa_pl_cdl_female_away   (operator, 21 skins)
+    sat_usa_pl_cdl_female_away_base_skin   [plain]
+    sat_usa_pl_cdl_female_away_optic_skin
+    sat_usa_pl_cdl_female_away_rokkr_skin
+    sat_usa_pl_cdl_female_away_koi_skin
+    sat_usa_pl_cdl_female_away_falcons_skin
+    sat_usa_pl_cdl_female_away_faze_skin
+    sat_usa_pl_cdl_female_away_m8s_skin
+    sat_usa_pl_cdl_female_away_breach_skin   [bundle: breach]
+    sat_usa_pl_cdl_female_away_ravens_skin
+    sat_usa_pl_cdl_female_away_thieves_skin
+    sat_usa_pl_cdl_female_away_heretics_skin
+    sat_usa_pl_cdl_female_away_cloud9_skin
+    sat_usa_pl_cdl_female_away_surge_skin
+    sat_usa_pl_cdl_female_away_mp_ranked_base_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_1_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_gold_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_iridescent_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_250_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_platinum_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_diamond_skin   [plain]
+    sat_usa_pl_cdl_female_away_mp_ranked_crimson_skin   [plain]
+
+sat_usa_pl_cdl_female_home   (operator, 29 skins)
+    sat_usa_pl_cdl_female_home_base_skin   [plain]
+    sat_usa_pl_cdl_female_home_thieves_skin
+    sat_usa_pl_cdl_female_home_breach_skin   [bundle: breach]
+    sat_usa_pl_cdl_female_home_optic_skin
+    sat_usa_pl_cdl_female_home_koi_skin
+    sat_usa_pl_cdl_female_home_ravens_skin
+    sat_usa_pl_cdl_female_home_heretics_skin
+    sat_usa_pl_cdl_female_home_faze_skin
+    sat_usa_pl_cdl_female_home_rokkr_skin
+    sat_usa_pl_cdl_female_home_surge_skin
+    sat_usa_pl_cdl_female_home_m8s_skin
+    sat_usa_pl_cdl_female_home_cloud9_skin
+    sat_usa_pl_cdl_female_home_falcons_skin
+    sat_usa_pl_cdl_female_home_wz_ranked_base_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_base_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_iridescent_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_diamond_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_iridescent_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_platinum_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_diamond_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_250_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_1_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_crimson_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_gold_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_platinum_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_250_skin   [plain]
+    sat_usa_pl_cdl_female_home_wz_ranked_gold_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_1_skin   [plain]
+    sat_usa_pl_cdl_female_home_mp_ranked_crimson_skin   [plain]
+
+sat_phl_pl_maya   (operator, 5 skins)
+    sat_phl_pl_maya_drained_skin
+    sat_phl_pl_maya_rogue_skin
+    sat_phl_pl_maya_quest_skin
+    sat_phl_pl_maya_terminus_skin
+    sat_phl_pl_maya_super_skin
+
+sat_gbr_pl_grey   (operator, 5 skins)
+    sat_gbr_pl_grey_drained_skin
+    sat_gbr_pl_grey_sable_skin
+    sat_gbr_pl_grey_janus_skin
+    sat_gbr_pl_grey_quest_skin
+    sat_gbr_pl_grey_super_skin
+
+sat_usa_pl_carver   (operator, 5 skins)
+    sat_usa_pl_carver_drained_skin
+    sat_usa_pl_carver_infiltration_skin
+    sat_usa_pl_carver_mansion_skin
+    sat_usa_pl_carver_quest_skin
+    sat_usa_pl_carver_super_skin
+
+sat_usa_pl_iris   (operator, 2 skins)
+    sat_usa_pl_iris_base_skin   [bundle: iris]   [plain]
+    sat_usa_pl_iris_white_skin   [bundle: iris]
+
+sat_usa_pl_sunflower   (operator, 1 skin)
+    sat_usa_pl_sunflower_base_skin   [bundle: sunflower]   [plain]
+
+sat_usa_pl_director   (operator, 6 skins)
+    sat_usa_pl_director_base_skin   [bundle: director]   [plain]
+    sat_usa_pl_director_base_bc_skin   [bundle: director]
+    sat_usa_pl_director_vector_skin   [bundle: director]
+    sat_usa_pl_director_vector_bc_skin   [bundle: director]
+    sat_usa_pl_director_slice_skin   [bundle: director]
+    sat_usa_pl_director_witch_skin   [bundle: director]
+
+sat_usa_pl_valkyrie   (operator, 3 skins)
+    sat_usa_pl_valkyrie_proto_skin   [bundle: proto]
+    sat_usa_pl_valkyrie_tear_skin
+    sat_usa_pl_valkyrie_skull_skin
+
+sat_usa_pl_brie   (operator, 3 skins)
+    sat_usa_pl_brie_base_skin   [bundle: brie]   [plain]
+    sat_usa_pl_brie_brioche_skin   [bundle: brie]
+    sat_usa_pl_brie_honey_skin   [bundle: brie]
+
+==== Guild operators (game faction code KORTAC) ====
+
+nicki_eastern   (operator, 1 skin)
+    nicki_eastern_a   [operators mod: Nicki Minaj (MWII): Nicki Minaj; settings only, never random]
+
+dune_eastern   (operator, 1 skin)
+    dune_eastern_a   [operators mod: Sardaukar (Dune): Sardaukar; settings only, never random]
+
+homelander_eastern   (operator, 1 skin)
+    homelander_eastern_a   [operators mod: Homelander (MWII): Homelander; settings only, never random]
+
+jup_mp_spring   (operator, 1 skin)
+    jup_mp_spring_skin   [operators mod: Cheech (MWIII): Cheech; settings only, never random]
+
+==== No faction (either side) ====
+
+jup_mp_void   (operator, 5 skins)
+    jup_mp_void_skin   [operators mod: Void (MWIII): Void; settings only, never random]
+    jup_mp_void_10_skin   [operators mod: Void (MWIII): Void (skin 10); settings only, never random]
+    jup_mp_void_11_skin   [operators mod: Void (MWIII): Void (skin 11); settings only, never random]
+    jup_mp_void_13_skin   [operators mod: Void (MWIII): Void (skin 13); settings only, never random]
+    jup_mp_void_14_skin   [operators mod: Void (MWIII): Void (skin 14); settings only, never random]
+
+jup_mp_bravo   (operator, 13 skins)
+    jup_mp_bravo_skin   [operators mod: Pathfinder (MWIII): Pathfinder; settings only, never random]
+    jup_mp_bravo_10_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 10); settings only, never random]
+    jup_mp_bravo_11_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 11); settings only, never random]
+    jup_mp_bravo_12_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 12); settings only, never random]
+    jup_mp_bravo_13_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 13); settings only, never random]
+    jup_mp_bravo_14_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 14); settings only, never random]
+    jup_mp_bravo_15_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 15); settings only, never random]
+    jup_mp_bravo_17_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 17); settings only, never random]
+    jup_mp_bravo_18_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 18); settings only, never random]
+    jup_mp_bravo_19_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 19); settings only, never random]
+    jup_mp_bravo_20_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 20); settings only, never random]
+    jup_mp_bravo_21_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 21); settings only, never random]
+    jup_mp_bravo_22_skin   [operators mod: Pathfinder (MWIII): Pathfinder (skin 22); settings only, never random]
+
+jup_mp_mike   (operator, 23 skins)
+    jup_mp_mike_skin   [operators mod: Jabber (MWIII): Jabber; settings only, never random]
+    jup_mp_mike_10_skin   [operators mod: Jabber (MWIII): Jabber (skin 10); settings only, never random]
+    jup_mp_mike_11_skin   [operators mod: Jabber (MWIII): Jabber (skin 11); settings only, never random]
+    jup_mp_mike_12_skin   [operators mod: Jabber (MWIII): Jabber (skin 12); settings only, never random]
+    jup_mp_mike_13_skin   [operators mod: Jabber (MWIII): Jabber (skin 13); settings only, never random]
+    jup_mp_mike_14_skin   [operators mod: Jabber (MWIII): Jabber (skin 14); settings only, never random]
+    jup_mp_mike_15_skin   [operators mod: Jabber (MWIII): Jabber (skin 15); settings only, never random]
+    jup_mp_mike_16_skin   [operators mod: Jabber (MWIII): Jabber (skin 16); settings only, never random]
+    jup_mp_mike_17_skin   [operators mod: Jabber (MWIII): Jabber (skin 17); settings only, never random]
+    jup_mp_mike_18_skin   [operators mod: Jabber (MWIII): Jabber (skin 18); settings only, never random]
+    jup_mp_mike_19_skin   [operators mod: Jabber (MWIII): Jabber (skin 19); settings only, never random]
+    jup_mp_mike_21_skin   [operators mod: Jabber (MWIII): Jabber (skin 21); settings only, never random]
+    jup_mp_mike_22_skin   [operators mod: Jabber (MWIII): Jabber (skin 22); settings only, never random]
+    jup_mp_mike_23_skin   [operators mod: Jabber (MWIII): Jabber (skin 23); settings only, never random]
+    jup_mp_mike_24_skin   [operators mod: Jabber (MWIII): Jabber (skin 24); settings only, never random]
+    jup_mp_mike_25_skin   [operators mod: Jabber (MWIII): Jabber (skin 25); settings only, never random]
+    jup_mp_mike_26_skin   [operators mod: Jabber (MWIII): Jabber (skin 26); settings only, never random]
+    jup_mp_mike_27_skin   [operators mod: Jabber (MWIII): Jabber (skin 27); settings only, never random]
+    jup_mp_mike_28_skin   [operators mod: Jabber (MWIII): Jabber (skin 28); settings only, never random]
+    jup_mp_mike_28b_skin   [operators mod: Jabber (MWIII): Jabber (skin 28b); settings only, never random]
+    jup_mp_mike_29_skin   [operators mod: Jabber (MWIII): Jabber (skin 29); settings only, never random]
+    jup_mp_mike_30_skin   [operators mod: Jabber (MWIII): Jabber (skin 30); settings only, never random]
+    jup_mp_mike_31_skin   [operators mod: Jabber (MWIII): Jabber (skin 31); settings only, never random]
